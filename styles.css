@@ -4,6 +4,8 @@
     --teksti: #333;
     --tausta: #f9f9f9;
     --blockquote-bg: #eef;
+    --visit: rgb(0, 88, 252);
+    --active: rgb(0, 102, 255);
 }
 
 body {
@@ -13,6 +15,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 h1 {
@@ -33,6 +36,14 @@ a:hover {
     text-decoration: underline;
 }
 
+a:visited {
+    color: var(--visit);
+}
+
+a:active {
+    color: var(--active);
+}
+
 p {
     margin: 1rem 0;
     padding: 0 1rem;
@@ -42,6 +53,7 @@ p {
     font-size: 0.9rem;
     font-style: italic;
     color: #555;
+    text-align: center;
 }
 
 blockquote {
